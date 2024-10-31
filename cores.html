@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TinhoNOTP&B</title>
+    <style>
+        /* Container do slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Estilo das imagens */
+.slide {
+    display: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Efeito de fade */
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4 }
+    to { opacity: 1 }
+}
+
+/* Botões de navegação */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+header img{
+    width: 60px;
+    border-radius: 190px;
+    display: block;
+    margin: auto;
+    box-shadow: 0px 0px 0px 2px yellow;
+}
+
+header p{
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
+    
+}
+
+header{
+    padding: 20px;
+}
+
+header h2{
+    text-align: center;
+    text-decoration: overline yellow;
+    padding: 10px;
+    color: green;
+}
+
+h1{
+    text-align: center;
+    font-size: small;
+    padding: 30px; 
+    text-shadow: 0px 0px 0px 1px black;
+}
+
+a{
+    color: purple;
+
+}
+
+footer p{
+    text-align: center;
+    font-size: x-small;
+    color: red;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <img src="IMG_20240729_225419_435.jpg" alt="">
+
+        <p>TINHO</p>
+
+        <h2>MEU PERFIL NOT P&B.</h2>
+    </header>
+    <div class="slideshow-container">
+        <!-- Imagens do slideshow -->
+        <div class="slide fade">
+            <img src="InShot_20241030_060555630.jpg" alt="Imagem 1">
+        </div>
+        <div class="slide fade">
+            <img src="InShot_20241030_060449517.jpg" alt="Imagem 2">
+        </div>
+        <div class="slide fade">
+            <img src="InShot_20241030_060341532.jpg" alt="Imagem 3">
+        </div>
+        <div class="slide fade">
+            <img src="InShot_20241030_060230990.jpg" alt="Imagem 4">
+        </div>
+        <div class="slide fade">
+            <img src="InShot_20241031_004539987.jpg" alt="Imagem 5">
+        </div>
+
+
+
+        <!-- Botões de navegação -->
+        <a class="prev" onclick="mudarSlide(-1)">&#10094;</a>
+        <a class="next" onclick="mudarSlide(1)">&#10095;</a>
+    </div>
+
+    <a href="perfil.html">
+        <h1>CLIQUE AQUI PARA DESATIVAR AS CORES.</h1>
+    </a>
+
+    <footer>
+        <p>SITE CRIADO E DESENVOLVIDO POR VITOR PEREIRA.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
